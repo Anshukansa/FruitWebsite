@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshu's Fruit Website</title>
+
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+<body>
+
+    <!-- header-->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="order.html">Order Now</a>
+            <a href="review.html">Reviews</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+    </header>
+
+    <!-- header-->
+
+<!-- menu -->
+
+<section class="products" id="products">
+
+    <h1 class="op-heading"> our <span>products</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/product-1.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Apple</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$1.00 <span>$2.00</span></div>
+                <button class="btn" onclick="addToCart('1 X Apple', 1.00)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/product-2.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Orange</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$0.50 <span>$1.50</span></div>
+                <button class="btn" onclick="addToCart('1 X Orange', 0.50)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box">
+           
+            <div class="image">
+                <img src="images/product-3.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Banana</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$1.50 <span>$3.00</span></div>
+                <button class="btn" onclick="addToCart('1 X Banana', 1.50)">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<div id="cart-icon" onclick="toggleCart()">
+    <span id="cart-count">0</span>
+    <img src="images/cart.png" alt="Cart Icon">
+    
+</div>
+
+
+<section class="cart" id="cart" style="display: none;">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: <span id="cart-total">$0.00</span></p>
+    <button class="btn" onclick="placeOrder()">Place Order</button>
+</section>
+
+<!-- menu  -->
+
+ <!-- footer -->
+
+    <section class="footer">
+
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="order.html">Order Now</a>
+            <a href="review.html">Reviews</a>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+
+    
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshu's Fruit Website</title>
+
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+<body>
+
+    <!-- header-->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="order.html">Order Now</a>
+            <a href="review.html">Reviews</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+    </header>
+
+    <!-- header-->
+
+ <!-- review -->
+
+ <section class="review" id="review">
+
+    <h1 class="op-heading"> customer's <span>review</span> </h1>
+
+    <div class="review-box-container">
+
+        <div class="review-box">
+            
+            <p>Anshu's Fruit Store exceeded my expectations! Fresh, juicy fruits delivered promptly. Their variety and quality make them my go-to for online fruit shopping.</p>
+            <img src="images/pic-1.png" class="user" alt="">
+            <h3>Harsh Patel</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="review-box">
+           
+            <p>Anshu's Fruit Store exceeded my expectations! Fresh, juicy fruits delivered promptly. Their variety and quality make them my go-to for online fruit shopping.</p>
+            <img src="images/pic-1.png" class="user" alt="">
+            <h3>Kim</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+
+        </div>
+
+        
+
+        <div class="review-box">
+           
+            <p>Anshu's Fruit Store is a gem! Exceptional fruits, easy navigation, and prompt deliveries. My family loves the variety and quality. Highly recommend for online fruit shopping!</p>
+            <img src="images/pic-1.png" class="user" alt="">
+            <h3>Jag</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+    </div>
+    <div class="review-form-container">
+        
+        <form id="reviewForm">
+            <h2>Write a Review</h2>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" id="name" placeholder="name">
+            </div>
+           
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="text" id="reviewText" rows="4" placeholder="Write your review" required>
+            </div>
+
+            <div class="inputBox">
+                <span class="fas fa-star"></span>
+                <select class="selectRating" id="rating" required>
+                    <option value="1">1 star</option>
+                    <option value="2">2 stars</option>
+                    <option value="3">3 stars</option>
+                    <option value="4">4 stars</option>
+                    <option value="5" selected>5 stars</option>
+                </select>
+            </div>
+
+            
+
+            <button type="button" class="btn" onclick="addReview()">Submit Review</button>
+        </form>
+    </div>
+
+</section>
+
+
+
+
+<!-- review -->
+
+ <!-- footer -->
+
+    <section class="footer">
+
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="order.html">Order Now</a>
+            <a href="review.html">Reviews</a>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+
+    
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
